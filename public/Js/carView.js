@@ -32,15 +32,15 @@ function showSlides(n) {
 }
 
 
-var html="";
-html+='<h3 class="userName" id="dealershipName" onclick="viewDealer(`'+dealers[0].uuid+'`)">';
-html+=    dealers[0].name;
-html+='</h3>';
-html+='<p>'+dealers[0].website+'</p>';
-html+='<p>'+address[0].street+" "+address[0].city+", "+address[0].province+'</p>';
-html+='<p>'+dealers[0].amvic+'</p>';
-html+='<p></p>';
-$('.userInfo').prepend(html)
+// var html="";
+// html+='<h3 class="userName" id="dealershipName" onclick="viewDealer(`'+dealers[0].uuid+'`)">';
+// html+=    dealers[0].name;
+// html+='</h3>';
+// html+='<p>'+dealers[0].website+'</p>';
+// html+='<p>'+address[0].street+" "+address[0].city+", "+address[0].province+'</p>';
+// html+='<p>'+dealers[0].amvic+'</p>';
+// html+='<p></p>';
+// $('.userInfo').append(html)
 
 
 $('#vinNumber').val(vin);

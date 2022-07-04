@@ -78,7 +78,13 @@
           </a>
         </div>
         <div class="userInfo">
-          <p class="userActiveListingCount" id="userActiveListingCount"></p>
+          <!-- <p class="userActiveListingCount" id="userActiveListingCount"></p> -->
+          <h3 class="userName" id="dealershipName"><%= dealers[0].name %></h3>
+          <p class="userActiveListingCount" id="userActiveListingCount"><%= dealers[0].website%></p>
+          <p class="userActiveListingCount" id="userActiveListingCount"><%= address[0].street%> <%= address[0].city%> <%= address[0].province%></p>
+          <!-- <p class="userActiveListingCount" id="userActiveListingCount"><%= dealers[0].amvic%></p>
+          <p></p> -->
+
         </div>
       </div>
 
@@ -231,10 +237,10 @@
       <!-- SHARE BUTTON -->
         <!-- Your share button code -->
 
-      <div class="fb-share-button" data-href="https://www.tulucanada.com/carview/GT7281" 
+      <!-- <div class="fb-share-button" data-href="https://www.tulucanada.com/carview/GT7281" 
       data-layout="button" data-size="large"><a target="_blank" 
       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tulucanada.com%2Fcarview%2FGT7281&amp;src=sdkpreparse" 
-      class="fb-xfbml-parse-ignore">Share</a></div>
+      class="fb-xfbml-parse-ignore">Share</a></div> -->
   <!-- <div class="fb-share-button" 
   data-href="https://www.tulucanada.com/carview/<%= vehicles[0].vin %>"
   data-layout="button">
@@ -351,11 +357,14 @@
     var address = <%- JSON.stringify(address)%>
     console.log(address)
     var dealerId = dealers[0]._id;
+    console.log(dealerId)
     var vehicleimages = <%- JSON.stringify(vehicleimages)%>
-    console.log(vehicleimages.image)
+    console.log(dealerId)
 
     
   </script>
   <script src="../Js/sideMenu.js"></script>
   <script src="../Js/carView.js"></script>
+  <!-- <script src="public/Js/carView.js"></script> -->
+  
 </html>

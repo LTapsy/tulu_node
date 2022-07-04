@@ -347,8 +347,10 @@ pgroutr.get("/carview/:vin", (req, res) => {
                     }
 
                     Vehicle.updateOne(myquery, newvalues).then((updatedVehicle) => {
-                      console.log(images);
-                      console.log(vehicleimages);
+                      // console.log(images);
+                      // console.log(vehicleimages);
+                      console.log(dealers)
+                      // console.log(dealers[0]._id)
                       res.render("CarView", {
                         vehicles: vehicles,
                         user: req.user,

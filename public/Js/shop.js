@@ -168,6 +168,7 @@ function carView(index){
     location.replace("/carview"+ "?id=" + index);
 }
 
+
 function selectedFilter(){
   var filterval = Object.fromEntries(new URLSearchParams(location.search))
   $('#MakeSearch').val(filterval.make)

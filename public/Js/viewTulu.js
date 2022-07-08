@@ -55,13 +55,13 @@
                 
                 // $('.wrapper').append(emailBtn);
 
-                var messengerBtn = "";
-                messengerBtn+='<button onclick="goToMessenger()" class="sendMessage">';
-                messengerBtn+='Send Message';
-                messengerBtn+='</button>';
-                messengerBtn+='';
+                // var messengerBtn = "";
+                // messengerBtn+='<button onclick="goToMessenger()" class="sendMessage">';
+                // messengerBtn+='Send Message';
+                // messengerBtn+='</button>';
+                // messengerBtn+='';
  
-                $('.wrapper').append(messengerBtn);
+                // $('.wrapper').append(messengerBtn);
             }
         }
     };

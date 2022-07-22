@@ -1,147 +1,241 @@
 /* Header */
-.wrapper{
-    align-items: center;
-    padding:0 0 100px 0;
+.wrapper {
+  align-items: center;
+  padding: 0 0 100px 0;
 }
 
-.wrapper .banner{
-    background:#79C6AC ;
-    width:100%;
-    height:25vh;
+.wrapper .banner {
+  /* background: #79c6ac; */
+  background: url("/images/mint_umbrellas.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 25vh;
 }
 
-.userInfo{
-    align-items: center;
-    position: relative;
-    top:-60px;
-    width:80vmin;
-    /* padding:0 0 50px 0; */
+.userInfo {
+  align-items: center;
+  position: relative;
+  top: -60px;
+  width: 80vmin;
+  /* padding:0 0 50px 0; */
 }
 
-.userImage{
-    border:4px solid white;
-    background:#8B9196;
+.userImage {
+  border: 4px solid white;
+  background: #8b9196;
 
-    border-radius: 50%;
+  border-radius: 15%;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.userImage img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.userImage i {
+  color: white;
+}
+
+.userName {
+  margin: 10px 0;
+}
+
+.userRole {
+  color: #79c6ac;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.userRating {
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.userRating i {
+  color: goldenrod;
+}
+
+.carsSold {
+  font-size: small;
+  margin: 0 0 20px 0;
+  color: #8b9196;
+  flex-direction: row;
+}
+
+.carsSold span {
+  font-size: small;
+  margin: 0 0 0 5px;
+  color: #8b9196;
+}
+
+.userBio {
+  font-size: medium;
+  color: #8b9196;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.bio {
+  color: #79c6ac;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subInfo {
+  margin: 0 0 20px 0;
+}
+
+.subInfo h4 {
+  margin: 15px 0 5px 0;
+  color: #79c6ac;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subInfo p {
+  font-size: small;
+}
+
+.socialMediaAccounts {
+  flex-direction: row;
+  margin: 10px 0 0 0;
+}
+
+.socialMediaAccounts li {
+  margin: 10px;
+}
+
+.socialMediaAccounts li i {
+  color: #79c6ac;
+}
+
+.editProfileBtn {
+  margin: 10px 0 0 0;
+  width: 300px;
+  padding: 15px 0;
+  border: none;
+  align-items: center;
+  background: #17242d;
+  border-radius: 10px;
+  color: white;
+}
+
+.accountMenuListItems {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 15px;
+  width: 15px;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #808080;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.sendMessage {
+  margin: 0px 0 0 0;
+  width: 300px;
+  padding: 15px 0;
+  border: none;
+  align-items: center;
+  background: #17242d;
+  border-radius: 10px;
+  color: white;
+}
+
+.line {
+  border-top: 3px dashed #bbb;
+  width: 100%;
+  margin: 10px 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  .userName {
+    margin: 10px 0 5px 0;
+    font-size: 40px;
+  }
+
+  .userRole {
+    color: #79c6ac;
+    margin-top: -5px;
+  }
+
+  .subInfo {
+    margin: 10px 10px 20px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+  }
+
+  .subTopic {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px 0 20px 5px;
+    width: 100%;
+  }
+
+  .subInfo h4 {
+    margin: 15px 0 5px 0;
+    color: #79c6ac;
+  }
+
+  .subInfo p {
+    font-size: medium;
+  }
+
+  .userImage {
+    border: 4px solid white;
+    background: #8b9196;
+    border-radius: 20%;
     overflow: hidden;
-    height:100px;
-    width:100px;
+    height: 200px;
+    width: 200px;
     justify-content: center;
     align-items: center;
     position: relative;
-}
+  }
 
-.userImage img{
-    height:100%;
+  .userImage img {
+    height: 100%;
+    width: 100%;
     position: absolute;
-}
+    object-fit: cover;
+  }
 
-.userImage i{
+  .userImage i {
     color: white;
-}
+  }
 
-.userName{
-    margin:10px 0;
-}
-
-.userRole{
-    color:#79C6AC;
-}
-
-.userRating{
-    flex-direction: row;
-    margin:10px 0;
-}
-
-.userRating i{
-    color:goldenrod;
-}
-
-.carsSold{
-    font-size: small;
-    margin:0 0 20px 0;
-    color:#8b9196;
-    flex-direction: row;
-}
-
-.carsSold span{
-    font-size: small;
-    margin:0 0 0 5px;
-    color:#8b9196;
-}
-
-.userBio{
-    font-size: small;
-    color:#8b9196;
+  .userBio {
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    padding: 10px;
+    font-size: medium;
+    margin-bottom: 5px;
+    color: #8b9196;
     text-align: center;
-}
-
-
-.subInfo{
-    margin:0 0 20px 0;
-}
-
-.subInfo h4{
-    margin:15px 0 5px 0;
-    color:#79C6AC ;
-}
-
-.subInfo p{
-    font-size: small;
-}
-
-
-.socialMediaAccounts{
-    flex-direction: row;
-    margin:10px 0 0 0;
-}
-
-.socialMediaAccounts li{
-    margin:10px;
-}
-
-.socialMediaAccounts li i{
-    color:#79C6AC ;
-}
-
-.editProfileBtn{
-    margin:10px 0 0 0;
-    width:300px;
-    padding:15px 0;
-    border:none;
-    align-items: center;
-    background:#17242D;
-    border-radius: 10px;
-    color:white;
-}
-
-
-.accountMenuListItems{
-    position:relative;
-}
-
-.count{
-    position:absolute;
-    top:0;
-    right:0;
-    height:15px;
-    width:15px;
-    justify-content:center;
-    align-items:center;
-    background:white;
-    color:#808080;
-    border-radius:20px;
-    font-size:10px;
-}
-
-
-.sendMessage{
-    margin:0px 0 0 0;
-    width:300px;
-    padding:15px 0;
-    border:none;
-    align-items: center;
-    background:#17242D;
-    border-radius: 10px;
-    color:white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
 }

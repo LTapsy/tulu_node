@@ -1,170 +1,169 @@
-
-body{
-    background: linear-gradient(#ffffff,#a1d6c49c),url('/images/abstract-bg.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+body {
+  background: linear-gradient(#ffffff, #a1d6c49c),
+    url("/images/abstract-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-
-.heading{
-    margin:65px 0px 0px 0px;
-    background:linear-gradient(#0000007a,#0000007a),url('/images/bg-dealership.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    height:560px;
-    justify-content: center;
-    align-items: center;
+.heading {
+  margin: 65px 0px 0px 0px;
+  background: linear-gradient(#0000007a, #0000007a),
+    url("/images/bg-dealership.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 560px;
+  justify-content: center;
+  align-items: center;
 }
 
-.heading h2,.heading p,.heading p a{
-    color:white;
-    font-size: 42px;
-    filter:drop-shadow(0 0 10px #0000007a);
-    text-align: center;
+.heading h2,
+.heading p,
+.heading p a {
+  color: white;
+  font-size: 42px;
+  filter: drop-shadow(0 0 10px #0000007a);
+  text-align: center;
 }
 
-.heading h2{
-    margin:0 0 20px 0;
+.heading h2 {
+  margin: 0 0 20px 0;
 }
 
-.heading p{
-    margin:5px 0 0 0;
-    font-size: 28px;
+.heading p {
+  margin: 5px 0 0 0;
+  font-size: 28px;
 }
 
-.heading p a{
-    text-decoration: underline;
-    padding:5px 0;
-    font-size: 28px;
+.heading p a {
+  text-decoration: underline;
+  padding: 5px 0;
+  font-size: 28px;
 }
 
-.influencerList{
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 100px 0;
+.influencerList {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 100px 0;
 }
 
-.influencerContainer{
-    margin:20px 0;
-    flex-direction: row;
-    flex-wrap: wrap;
+.influencerContainer {
+  margin: 20px 0;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.influencerListItem{
-    /* border-bottom:1px solid #8b91964b; */
-    padding:30px;
-    justify-content: center;
-    align-items: center;
-    border:1px solid #00000015;
-    margin:20px;
-    border-radius: 20px;
-    filter:drop-shadow(0 10px 10px #00000028);
-    background-color: white;
-    /* flex-direction: row; */
+.influencerListItem {
+  /* border-bottom:1px solid #8b91964b; */
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00000015;
+  margin: 20px;
+  border-radius: 20px;
+  filter: drop-shadow(0 10px 10px #00000028);
+  background-color: white;
+  /* flex-direction: row; */
 }
 
-.influencerImage{
-    /* border:4px solid #79C6AC */
-    border-radius: 20px;
-    overflow: hidden;
-    width:320px;
-    height:320px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-size: cover;
-    margin:0 0 20px 0;
+.influencerImage {
+  /* border:4px solid #79C6AC */
+  border-radius: 20px;
+  overflow: hidden;
+  width: 320px;
+  height: 320px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  margin: 0 0 20px 0;
 }
 
-.influencerImage img{
-    width:100%;
+.influencerImage img {
+  width: 100%;
 }
 
-.influencerInfo{
-    /* margin:0 0 0 20px; */
-    justify-content: center;
-    align-items: center;
+.influencerInfo {
+  /* margin:0 0 0 20px; */
+  justify-content: center;
+  align-items: center;
 }
 
-.influencerName{
-    color:#79C6AC;
-    text-align: center;
-    font-size:24px;
+.influencerName {
+  color: #79c6ac;
+  text-align: center;
+  font-size: 24px;
 }
 
-.influencerInfo h3{
-    color:#79C6AC;
-    text-align: center;
+.influencerInfo h3 {
+  color: #79c6ac;
+  text-align: center;
 }
 
-.influencerInfo p{
-    color:#8b9196;
-    font-size: 15px;
-    text-align: center;
+.influencerInfo p {
+  color: #8b9196;
+  font-size: 15px;
+  text-align: center;
 }
 
-
-.userRating{
-    flex-direction: row;
-    margin:5px 0;
+.userRating {
+  flex-direction: row;
+  margin: 5px 0;
 }
 
-.userRating i{
-    color:goldenrod;
+.userRating i {
+  color: goldenrod;
 }
 
-.influencerInfo button{
-    margin:5px 0 0 0 ;
-    padding:5px 0;
-    align-items: center;
-    background:#79C6AC;
-    border:none;
-    border-radius: 10px;
-    color:white;
+.influencerInfo button {
+  margin: 5px 0 0 0;
+  padding: 5px 0;
+  align-items: center;
+  background: #79c6ac;
+  border: none;
+  border-radius: 10px;
+  color: white;
 }
-
 
 @media screen and (max-width: 920px) {
+  .heading {
+    margin: 50px 0px 0px 0px;
+  }
 
-    .heading{
-        margin:50px 0px 0px 0px;
-    }
+  .influencerImage {
+    width: 180px;
+    height: 180px;
+  }
 
-    .influencerImage{
-        width:180px;
-        height:180px;
-    }
+  .influencerName {
+    color: #79c6ac;
+    text-align: center;
+    font-size: 24px;
+    width: 200px;
+  }
 
-    .influencerName{
-        color:#79C6AC;
-        text-align: center;
-        font-size:24px;
-        width:200px;
-    }
+  .influencerListItem {
+    width: 80%;
+  }
 
-    .influencerListItem{
-        width:80%;
-    }
+  .heading {
+    padding: 0 20px;
+  }
 
-    .heading{
-        padding:0 20px;
-    }
+  .heading p {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+  }
 
-    .heading p{
-        margin:5px 0 0 0;
-        font-size: 18px;
-    }
-    
-    .heading p a{
-        text-decoration: underline;
-        padding:5px 0;
-        font-size: 18px;
-    }
+  .heading p a {
+    text-decoration: underline;
+    padding: 5px 0;
+    font-size: 18px;
+  }
 }

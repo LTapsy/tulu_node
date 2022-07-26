@@ -144,8 +144,8 @@ function renderPosts(results){
           html += '          <p class="carPrice">$'+data.maxPrice + '</p>';
           html += '          <div class="additionalCarInfo" id="vehicle' + i + '">';
           html += '              <div><p class="carMileage"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;'+data.mileage +'  Kms</p></div>';
-          html += '              <div><p class="carTrim"><i class="fas fa-cut"></i>&nbsp;&nbsp;' + data.trim + '</p></div>';
-          html += '              <div><p class="carTransmission"><img class="infoIcon" src="/images/icons/gearbox.png" alt="">&nbsp;&nbsp;' + data.transmissionName + '</p></div>';
+          html += '              <div><p class="carTrim"><i class="fas fa-car-side"></i>&nbsp;&nbsp;' + data.vehicleType + '</p></div>';
+          html += '              <div><p class="carTransmission"><img class="infoIcon" src="/images/icons/gearbox.png" alt="">&nbsp;&nbsp;' + data.transmission + '</p></div>';
           html += '          </div>';
           html += '          <p class="dealership">' + dealername + '</p>';
           html += '      </div>';

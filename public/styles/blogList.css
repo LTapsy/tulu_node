@@ -60,3 +60,10 @@
     margin:0 0 0 10px ;
     color:#79C6AC;
 }
+
+.blogList ul li .description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 200px;
+    /* white-space: nowrap; */
+}

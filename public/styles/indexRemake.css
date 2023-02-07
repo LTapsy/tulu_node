@@ -613,7 +613,7 @@ header{
 .blogSection ul li{
     padding:30px;
     width:300px;
-    margin:0 30px;
+    margin: 10px 30px;
     border-radius: 10px;
     overflow: hidden;
     filter:drop-shadow(0 10px 10px #00000050);

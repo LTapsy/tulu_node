@@ -607,6 +607,7 @@ header{
     flex-direction: row;
     /* height:500px; */
     /* border:1px solid red; */
+    flex-wrap: wrap;
 }
 
 .blogSection ul li{

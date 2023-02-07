@@ -2,7 +2,7 @@
     cursor: pointer !important;
 }
 
-.body{
+.blogSection{
     overflow: hidden;
 }
 
@@ -600,6 +600,7 @@ header{
     justify-content: center;
     align-items: center;
     margin:60px 0;
+    flex-wrap: wrap;
 }
 
 .blogSection ul{

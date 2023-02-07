@@ -9,7 +9,7 @@
     <meta property="og:title"         content="<%= vehicles[0].year%> <%= vehicles[0].make%> <%= vehicles[0].model%>">
     <meta property="og:type"          content="website" />
     <meta property="og:description"   content="<%= vehicles[0].notes%>">
-    <meta property="og:image:url"     content="https://www.tulucanada.com/image/<%= vehicles[0].vin %>">
+    <meta property="og:image:url"     content="<%= vehicleimages[0] %>">
     <!-- <meta property='og:image:width'   content='1200' />
     <meta property='og:image:height'  content='627' /> -->
     <link rel="icon" type="image/png" href="../images/favicon.png" />
@@ -36,8 +36,8 @@
 
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" 
-  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" 
+  <script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"
   nonce="gV2q8xt1"></script>
   <!-- <script>
   </script> -->
@@ -106,7 +106,7 @@
               </div>
               <% }) %>
 
-              
+
               <br />
               <div
                 style="
@@ -237,18 +237,18 @@
       <!-- SHARE BUTTON -->
         <!-- Your share button code -->
 
-      <!-- <div class="fb-share-button" data-href="https://www.tulucanada.com/carview/GT7281" 
-      data-layout="button" data-size="large"><a target="_blank" 
-      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tulucanada.com%2Fcarview%2FGT7281&amp;src=sdkpreparse" 
+      <!-- <div class="fb-share-button" data-href="https://www.tulucanada.com/carview/GT7281"
+      data-layout="button" data-size="large"><a target="_blank"
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.tulucanada.com%2Fcarview%2FGT7281&amp;src=sdkpreparse"
       class="fb-xfbml-parse-ignore">Share</a></div> -->
-  <!-- <div class="fb-share-button" 
+  <!-- <div class="fb-share-button"
   data-href="https://www.tulucanada.com/carview/<%= vehicles[0].vin %>"
   data-layout="button">
   </div> -->
 
 
   <!-- ------------- -->
-      
+
       <!-- <section class="shareSection" id="shareSection">
         <div class="ShareContainer">
           <p>Share This Listing</p>
@@ -264,7 +264,7 @@
           <!-- </div>
         </div>
       </section> -->
-  
+
     <%- include partials/footer %>
     <!-- <div id="fb-root"></div> -->
     <!-- ----------------- -->
@@ -331,7 +331,7 @@
       <div class="financeThankYou">
         <h2>
           Congrats!
-        </h2> 
+        </h2>
         <p>
           You’ve taken the first step to your new vehicle! Thank you for filling in the form with all your finance details. a Tulu Representative will be contacting you in a few hours. Happy driving!
         </p>
@@ -340,7 +340,7 @@
       </form>
     </div>
 
-    
+
 
   </body>
 
@@ -361,10 +361,10 @@
     var vehicleimages = <%- JSON.stringify(vehicleimages)%>
     console.log(dealerId)
 
-    
+
   </script>
   <script src="../Js/sideMenu.js"></script>
   <script src="../Js/carView.js"></script>
   <!-- <script src="public/Js/carView.js"></script> -->
-  
+
 </html>

@@ -12,18 +12,24 @@ const Blog = require("../models/blogschema");
 const { decode } = require("punycode");
 const nodemailer = require("nodemailer");
 
-
+// Add AddBlog Page
+router.get('/AddBlog',(req,res)=> {
+  console.log('Rendering AddBlog');
+  res.render("AdditionalBlog", {
+      user: req.user,
+  });
+});
 
 router.post("/AddBlog", (req, res) => {
   const { blogName, date, description } = req.body;
   console.log(req.body);
 
   const newBlog = new Blog({
-    blogName, date, description 
+    blogName, date, description
   });
 
   console.log(newBlog);
-  
+
   newBlog.save()
   .then((blog) => {
     console.log(blog)

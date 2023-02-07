@@ -5,7 +5,7 @@
         <%console.log('USER ROLE GOOD')%>
         <%console.log(user.toObject().role)%>
         <%if(user.toObject().role === 'tulu'){%>
-            
+
             <%console.log('TULU')%>
 
                     <li class="">
@@ -37,7 +37,7 @@
                     <li class="subMenuListLink">
                         <a href="/appointment">Appointments</a>
                     </li> -->
-                    
+
                     <li class="">
                         <a href="/users/logout">Log Out</a>
                     </li>
@@ -49,7 +49,7 @@
         <%}%>
         <%if(user.toObject().role === 'sysadmin'){%>
             <%console.log('SYSADMIN')%>
- 
+
                     <li class="">
                         <a href="/DashboardSysAdmin">Profile</a>
                     </li>
@@ -72,7 +72,7 @@
                         <a href="/EventList">Manage Events</a>
                     </li>
                     <li class="">
-                        <a href="/AddBlog">Add Blog</a>
+                        <a href="/blogs/AddBlog">Add Blog</a>
                     </li>
                     <li class="">
                         <a href="/users/logout">Log Out</a>
@@ -80,7 +80,7 @@
 
             <p class="loggedInAs">Logged in as : Sys Admin </p>
         <%}%>
-        <%if(user.toObject().role === 'dealeradmin'){%>    
+        <%if(user.toObject().role === 'dealeradmin'){%>
             <%console.log('DEALERADMIN or DEALERUSER')%>
 
                     <li class="">
@@ -107,9 +107,9 @@
 
             <p class="loggedInAs">Logged in as : <%- user.toObject().fName%> <%- user.toObject().lName%> </p>
         <%}%>
-        <%if(user.toObject().role === 'dealeruser'){%>    
+        <%if(user.toObject().role === 'dealeruser'){%>
             <%console.log('DEALERADMIN or DEALERUSER')%>
- 
+
                     <li class="">
                         <a href="/Dashboard">Profile</a>
                     </li>
@@ -137,11 +137,11 @@
     <%console.log('NO USER')%>
 
             <li class="">
-                <a href="/users/login">Sign In</a>    
+                <a href="/users/login">Sign In</a>
             </li>
             <li class="">
                 <a href="/users/register">Register</a>
             </li>
 
     <p class="loggedInAs">Logged in as Guest</p>
-<%}%> 
+<%}%>

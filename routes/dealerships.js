@@ -58,7 +58,7 @@ router.post('/dashboardSysAdminDealership',(req,res)=>{
                 const newAddress = new Address({
                     errors,targetId,street,city,province,postal
                 });
-                
+
                 newDealer.save()
                 .then(dealer => {
                     newAddress.save()
@@ -99,12 +99,12 @@ router.post('/EditDealer',(req,res)=>{
     var myquery = { uuid: req.user.toObject().dealerId };
     var myqueryAddress = { targetId: req.user.toObject().dealerId };
     const { name,logo,website,street,city,province,postal} = req.body;
-    var newvalues = { 
+    var newvalues = {
         name: name,
         logo: logo
     };
 
-    var newaddressvalues = { 
+    var newaddressvalues = {
         website: website,
         street: street,
         city: city,
@@ -116,7 +116,7 @@ router.post('/EditDealer',(req,res)=>{
             Address.updateOne(myqueryAddress, newaddressvalues)
             .then(address=>{
                 req.flash('success_msg', 'Changes Saved!');
-                res.redirect('/dealerships/EditDealer')  
+                res.redirect('/dealerships/EditDealer')
             })
         })
 });
